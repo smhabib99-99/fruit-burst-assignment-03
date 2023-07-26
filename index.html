@@ -31,11 +31,24 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
+
+    <!-- module.exports = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'hero-pattern': "url('/img/hero-pattern.svg')",
+          'footer-texture': "url('/img/footer-texture.png')",
+        }
+      }
+    }
+  } -->
+
+
 </head>
 
 <body class="font-lato">
 
-    <header class="m-4 flex justify-center md:container md:mx-auto">
+    <header class="justify-center md:container md:mx-auto">
 
         <!-- <div class="">
             <li>Home</li>
@@ -44,7 +57,7 @@
             <li>All Fruits</li>
         </div> -->
 
-        <div class="navbar flex bg-habib rounded-full">
+        <div class="my-8 max-w-full max-h-none navbar flex bg-habib rounded-full">
 
 
             <div class="flex justify-center items-center flex-1">
@@ -57,21 +70,21 @@
             </div>
 
 
-            <div class="flex-1 flex-row-reverse pr-30 mr-20">
-          
-                <a class="btn btn-ghost normal-case text-white text-4xl ">Fruit Burst</a>
+            <div class=" flex-row-reverse md:pr-30 xl:mr-20">
+
+                <a class="btn btn-ghost normal-case mr-4 pr-36 text-white text-4xl ">Fruit Burst</a>
                 <div class="rounded-full">
-                    <img src="/images//logo.png" />
+                    <img class="lg:pr-4 md:h-full md:w-full" src="/images//logo.png" />
                 </div>
             </div>
 
 
 
-            <div class="flex-none gap-2">
+            <div class="flex-none max-h-8 max-w-xl gap-2">
 
 
                 <div class="pr-14 form-control">
-                    <input class="rounded-full max-h-14" type="text" placeholder="Search here"
+                    <input class="rounded-full " type="text" placeholder="Search here"
                         class="input input-rounded md:w-auto" />
                 </div>
 
@@ -106,6 +119,109 @@
 
 
         </div>
+
+        <!-- slider or carousel -->
+
+        <!-- <section class="m-12">
+            <div class="grid carousel w-full">
+                <div id="item1" class="carousel-item w-full bg-[url('/images/banner1.png)]"> -->
+        <!-- <div class="relative bg-cover w-full mx-auto text-center"
+                        style="background-image: url('./images/banner1.png');">
+                            <div class="flex h-full items-center justify-center">
+                                <div class="text-white">
+                                    <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
+                                    <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+                                    <button class="bg-habib m-4">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+        <!-- 
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                    <img src="/images//banner2.png" class="w-full" />
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                    <img src="/images//banner4.png" class="w-full" />
+                </div>
+            </div>
+            <div class="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" class="btn btn-xs">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+            </div>
+        </section> -->
+
+
+
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="bg-cover text-center text-white h-80 w-full" style="background-image: url('/images/banner1.png')">
+                        <!-- <p class="text-white">habib</p> -->
+                        <h3 class="text-7xl mt-10 text-white items-center">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-white text-xl my-4">We supply highly quality organic products</p>
+                        <button class="bg-habib text-xl rounded-md p-2">Shop Now</button>
+                    </div>
+                    <!-- <p>habib</p> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <!-- <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" /> -->
+
+                    <div class="bg-cover h-80 w-full" style="background-image: url('/images/banner2.png'); height: 400px">
+                    <p class="text-white">Habib vai</p>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+<!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <!-- <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" /> -->
+
+                    <div class="bg-cover h-80 w-full" style="background-image: url('/images/banner3.png')">
+                        <p class="text-white">habib</p>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+                <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <!-- <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" /> -->
+
+
+                    <div class="bg-cover h-80 w-full" style="background-image: url('/images/banner4.png')">
+                        <p class="text-white">habib</p>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </header>
     <main class="md:container md:mx-auto">
 
@@ -121,3 +237,27 @@
 </body>
 
 </html>
+
+<!-- Jumbotron -->
+<!-- <div
+class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+style="background-image: url('...'); height: 400px">
+<div
+  class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+  style="background-color: rgba(0, 0, 0, 0.6)">
+  <div class="flex h-full items-center justify-center">
+    <div class="text-white">
+      <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
+      <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+      <button
+        type="button"
+        class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Call to action
+      </button>
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- Jumbotron -->
